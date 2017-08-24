@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        <link rel="stylesheet" href="bootstrap-timepicker.min.css" />
+		<link rel="stylesheet" href="bootstrap-datepicker.css" />
+		<link rel="stylesheet" href="bootstrap-datepicker.standalone.css" />
+		<link rel="stylesheet" href="bootstrap-datepicker3.min.css" />
+		<link type="text/css" src="bootstrap-datepicker3.standalone.css" /> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		  
+		  
+        <script type="text/javascript" src="bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="bootstrap-timepicker.min.js"></script>
+		
+    </head>
+    <body class = "container">
+	
+	
+		<div style = " height: 87px">
+		
+		</div>
+		
+        <div class="bootstrap-timepicker">
+            <input id="timepicker5" type="text" class="input-small">
+            <i class="icon-time"></i>
+        </div>
+		
+		
+		<div class="span5 col-md-5" id="sandbox-container">
+			<input type="text" id = "date1" class="form-control">
+		</div>
+		
+		
+		<div class="input-group bootstrap-timepicker timepicker">
+            <input id="timepicker1" type="text" class="form-control input-small">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+        </div>
+		
+		
+		
+ 
+        <script type="text/javascript">
+            $("#timepicker5").timepicker({
+                template: false,
+                showInputs: false,
+                minuteStep: 5
+            });
+			
+			
+			$('#date1').datepicker({
+				todayBtn: "linked"
+			});
+			
+			$('#timepicker1').timepicker();
+        </script>
+    </body>
+	
+</html>
